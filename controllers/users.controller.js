@@ -1,4 +1,4 @@
-const user = require('../models/user.model');
+const user = require('../services/user.service');
 
 exports.getUserUid = async (req, res) => {
   const response = await user.getUserUid(req.params.uid);
